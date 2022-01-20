@@ -512,15 +512,16 @@ function sortCitiesArray(arr) {
  *           [0,0,0,1,0],
  *           [0,0,0,0,1]]
  */
-function getIdentityMatrix(n) {
-  const row = Array(n).fill(0);
-  const matrix = Array(n).fill(row);
-  matrix.map((rowi, mi) => {
-    rowi.map((item, ri) => {
-      if (ri === mi) item = 1; // eslint-disable-line no-param-reassign
-    });
-  });
-  return matrix;
+function getIdentityMatrix(/* n */) {
+  throw new Error('Not implemented');
+  // const row = Array(n).fill(0);
+  // const matrix = Array(n).fill(row);
+  // matrix.map((rowi, mi) => {
+  //   rowi.map((item, ri) => {
+  //     if (ri === mi) item = 1; // eslint-disable-line no-param-reassign
+  //   });
+  // });
+  // return matrix;
 }
 
 /**
